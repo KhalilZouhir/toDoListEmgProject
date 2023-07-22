@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<web-app xmlns="https://jakarta.ee/xml/ns/jakartaee"
+         xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+         xsi:schemaLocation="https://jakarta.ee/xml/ns/jakartaee https://jakarta.ee/xml/ns/jakartaee/web-app_5_0.xsd"
+         version="5.0">
+
+
+    <servlet>
+    <servlet-name>LoginServlet</servlet-name> <!--2 we specifiy the servlet we are using and its class or the folder  -->
+    <servlet-class>com.example.todolistemgproject.LoginServlet</servlet-class>
+</servlet>
+    <servlet-mapping>
+        <servlet-name>LoginServlet</servlet-name>
+        <url-pattern>/LoginServlet</url-pattern> <!--1-basically bhal routage f angular when we have a /bonjour
+    we gonna get redirected to a servlet name helloservlet -->
+    </servlet-mapping>
+    <servlet>
+        <servlet-name>homePageServlet</servlet-name> <!--2 we specifiy the servlet we are using and its class or the folder  -->
+        <servlet-class>com.example.todolistemgproject.homePageServlet</servlet-class>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>homePageServlet</servlet-name>
+        <url-pattern>/homePageServlet</url-pattern> <!--1-basically bhal routage f angular when we have a /bonjour
+    we gonna get redirected to a servlet name helloservlet -->
+    </servlet-mapping>
+    <servlet>
+        <servlet-name>membersServlet</servlet-name> <!--2 we specifiy the servlet we are using and its class or the folder  -->
+        <servlet-class>com.example.todolistemgproject.membersServlet</servlet-class>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>membersServlet</servlet-name>
+        <url-pattern>/membersServlet</url-pattern> <!--1-basically bhal routage f angular when we have a /bonjour
+    we gonna get redirected to a servlet name helloservlet -->
+    </servlet-mapping>
+    <servlet>
+        <servlet-name>memberPageServlet</servlet-name> <!--2 we specifiy the servlet we are using and its class or the folder  -->
+        <servlet-class>com.example.todolistemgproject.memberPageServlet</servlet-class>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>memberPageServlet</servlet-name>
+        <url-pattern>/memberPageServlet</url-pattern> <!--1-basically bhal routage f angular when we have a /bonjour
+    we gonna get redirected to a servlet name helloservlet -->
+    </servlet-mapping>
+
+    <servlet>
+        <servlet-name>updatingServlet</servlet-name> <!--2 we specifiy the servlet we are using and its class or the folder  -->
+        <servlet-class>com.example.todolistemgproject.updatingServlet</servlet-class>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>updatingServlet</servlet-name>
+        <url-pattern>/updatingServlet</url-pattern> <!--1-basically bhal routage f angular when we have a /bonjour
+    we gonna get redirected to a servlet name helloservlet -->
+    </servlet-mapping>
+
+    <servlet>
+        <servlet-name>deleteTaskServlet</servlet-name>
+        <servlet-class>com.example.todolistemgproject.deleteTaskServlet</servlet-class>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>deleteTaskServlet</servlet-name>
+        <url-pattern>/deleteTaskServlet</url-pattern>
+    </servlet-mapping>
+
+
+
+</web-app>
